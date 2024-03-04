@@ -57,10 +57,11 @@
 
 .button-container button{
   margin-top: 30px;
+  font-size: 16px;
   border:none;
   border-radius: 5px;
   padding: 15px 20px;
-  background-color: #dfd500;
+  background-color: #62C3F8;
   color: #a90000;
   cursor: pointer;
 }

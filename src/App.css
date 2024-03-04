@@ -17,3 +17,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.luffy{
+  position: absolute;
+  left: 0;
+}

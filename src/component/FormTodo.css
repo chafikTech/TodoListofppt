@@ -13,13 +13,56 @@
   padding: 10px;
 }
 
-.form-container button{
-  background-color: #a90000;
-  padding: 16px;
-  font-size: 20px;
+/* .form-container button{ */
+/*   background-color: #a90000; */
+/*   padding: 16px 20px; */
+/*   font-size: 20px; */
+/*   color: white; */
+/*   border: none; */
+/*   border-radius: 5px; */
+/*   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+/*   cursor: pointer; */
+/* } */
+
+
+.btn {
+  min-width: 150px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
   color: white;
+  background: #a90000;
   border: none;
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(0,0,0,.01);
+  transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
+  outline: none;
+  position: relative;
+  }
+
+.btn::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(150px + 12px);
+  min-height: calc(60px + 12px);
+  border: 3px solid #a90000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
 }
+
+.btn:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+.btn:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+

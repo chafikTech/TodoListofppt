@@ -21,12 +21,12 @@ const FormTodo = ({ addTask }) => {
         <input
           type="text"
           className="form-control"
-          placeholder="Enter name"
+          placeholder="Enter Task"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
-        <button type="submit" className="btn btn-primary">
-          Add User
+        <button type="submit" className="btn">
+          Add Task
         </button>
       </div>
     </form>

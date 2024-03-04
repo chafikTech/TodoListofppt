@@ -1,0 +1,23 @@
+.preloader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loder-img {
+  width: 250px;
+  animation: luffy 1s linear infinite;
+}
+
+@keyframes luffy {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}

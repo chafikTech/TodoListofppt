@@ -4,7 +4,7 @@ import { deleteTask, toggleComplete } from "../redux/action";
 import { motion, AnimatePresence } from "framer-motion";
 import TaskEditModal from "./TaskEditModal";
 import Close from "../images/Close.png";
-import Done from "../images/done.svg";
+import Done from "../images/done.png";
 import NotDone from "../images/notDone.png";
 import Edit from "../images/endit.png";
 import "./TaskList.css";
@@ -31,9 +31,9 @@ const TaskList = ({ filteredTasks, deleteTask, toggleComplete }) => {
 
   return (
     <div className="Task-container">
-      <AnimatePresence>
-        <ul>
-          {filteredTasks.map((task) => (
+      <ul>
+        {filteredTasks.map((task) => (
+          <AnimatePresence>
             <motion.li
               key={task.id}
               initial={{
@@ -61,9 +61,9 @@ const TaskList = ({ filteredTasks, deleteTask, toggleComplete }) => {
                 </button>
               </div>
             </motion.li>
-          ))}
-        </ul>
-      </AnimatePresence>
+          </AnimatePresence>
+        ))}
+      </ul>
       {editModalOpen && (
         <TaskEditModal task={selectedTask} onClose={closeEditModal} />
       )}
