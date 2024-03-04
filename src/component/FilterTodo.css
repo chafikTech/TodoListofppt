@@ -1,0 +1,43 @@
+.form-group{
+  width: 700px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.form-group input{
+  width: 300px;
+  padding: 11px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 3px solid #0549a5;
+  border-left: 3px solid #0549a5;
+  outline: none;
+}
+
+.form-group select{
+  width: 150px;
+  font-size: 15px;
+  padding: 10px;
+  background-color: #ffb300;
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.form-group input:hover{
+  border: none;
+  border-bottom: 3px solid #0549a5;
+  border-left: 3px solid #0549a5;
+  outline: none;
+}
+
+.form-group select:hover{
+  border: none;
+  outline: none;
+}
+.form-group select:focus{
+  border: none;
+  outline: none;
+}

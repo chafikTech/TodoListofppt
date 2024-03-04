@@ -1,0 +1,50 @@
+.Task-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.Task-container ul{
+  width: 800px;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Task-container ul li.done{
+  background-color: #ced4da;
+}
+
+.Task-container ul li{
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.button-task{
+  display: flex;
+  gap: 10px;
+}
+
+.button-task button{
+  background-color:transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.button-task button img{
+  width: 40px;
+}
+
+
